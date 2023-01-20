@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Chivo&display=swap');
+
+//Variables Colores
+$Base: #dbd9e1;
+$Primary-color: #b8a78c;
+$secondary-color: #ae8669;
+$terciary-color: #ae715f;
+$light-color: #f8f8f8;
+$dark-color: #0c0704;
+
+@mixin flex-basic{
+align-items: center;
+text-align: center;
+}
+
+
+body {
+    background-color: $Base;
+    font-family: 'Chivo', sans-serif;
+    min-height: 100vh;
+    
+}
+.container{
+    display: flex;
+    color: $dark-color;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+h2, h3 {
+    font-family: 'Archivo', sans-serif;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 30px;
+}
+
+header {
+    background-color: $secondary-color;
+    height: 6rem;
+}
+nav{
+    align-items: center;
+   
+}
+
+.logo{
+    color: $light-color;
+    }
+ul {
+list-style: none;
+gap: 10px;
+display: flex;
+    li{
+
+        a{
+            color: $light-color;
+            font-size: 20px;
+            
+        }
+    }
+}
+picture {
+    
+    img{
+       height: auto;
+       width: 100%;
+    }
+}
+
+main{
+    background-color: $Primary-color;
+}
+
+
