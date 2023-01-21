@@ -18,13 +18,10 @@ body {
     background-color: $Base;
     font-family: 'Chivo', sans-serif;
     min-height: 100vh;
+    overflow-x: hidden;
     
 }
-.container{
-    display: flex;
-    color: $dark-color;
-    overflow-x: hidden;
-}
+
 
 a {  text-decoration: none; }
 
@@ -53,29 +50,42 @@ header {
 
 ul {
 list-style: none;
-gap: 15px;
+gap: 10px;
 display: flex;
 align-items: center;
 
     li{
-        padding: 14px;
+        padding: 5px;
         a{
             color: $light-color;
             font-size: 20px;
+            background-color: $terciary-color;
+            padding: .5rem 1.2rem;
+            border-radius: 32px;
+            border: 2px solid $light-color;
+
+            &:hover{
+                background-color: $Primary-color;
+
+            }
         }
     }
 }
+.header-img{
 
-picture {
+    picture {
     
-    img{
-       height: auto;
-       width: 100%;
+        img{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+    }
+    
+.header-img__text{
+    position: absolute;
+    width: 50%;
     }
 }
-
-main{
-    background-color: $Primary-color;
-}
-
 
