@@ -29,21 +29,26 @@ h3 {
 
 header {
   background-color: #ae8669;
-  height: 6rem;
+  height: 9rem;
 }
-
-nav {
-  align-items: center;
+header nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
+  padding: 20px;
   color: #f8f8f8;
 }
 
 ul {
   list-style: none;
-  gap: 10px;
+  gap: 15px;
   display: flex;
+  align-items: center;
+}
+ul li {
+  padding: 14px;
 }
 ul li a {
   color: #f8f8f8;

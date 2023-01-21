@@ -26,44 +26,46 @@ body {
     overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
-}
-h2, h3 {
-    font-family: 'Archivo', sans-serif;
-}
-h2 {
-    font-size: 48px;
-}
-h3 {
-    font-size: 30px;
-}
+a {  text-decoration: none; }
+
+h2, h3 { font-family: 'Archivo', sans-serif; }
+
+h2 { font-size: 48px; }
+
+h3 { font-size: 30px; }
 
 header {
     background-color: $secondary-color;
-    height: 6rem;
-}
-nav{
-    align-items: center;
-   
+    height: 9rem;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        
+       
+    }
 }
 
-.logo{
+.logo {
+    padding: 20px;
     color: $light-color;
     }
+
 ul {
 list-style: none;
-gap: 10px;
+gap: 15px;
 display: flex;
-    li{
+align-items: center;
 
+    li{
+        padding: 14px;
         a{
             color: $light-color;
             font-size: 20px;
-            
         }
     }
 }
+
 picture {
     
     img{
