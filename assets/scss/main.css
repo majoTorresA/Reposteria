@@ -1,23 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&display=swap");
+* {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s all ease-in-out;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: rgba(34, 85, 34, 0.3333333333);
+  background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
-  overflow-x: hidden;
   color: #0c0704;
 }
 
 a {
-  text-decoration: none;
-  color: #0c0704;
+  color: #252525;
 }
 
 a:active {
-  color: #ae715f;
+  color: #f7af9d;
+}
+
+svg {
+  width: 32px;
+  height: 32px;
 }
 
 h2, h3 {
   font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 20px;
 }
 
 h2 {
@@ -26,12 +47,4 @@ h2 {
 
 h3 {
   font-size: 30px;
-}
-
-.main-image__img {
-  background-image: url(../main.jpg);
-}
-.main-image__img .main-image__text {
-  display: flex;
-  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
