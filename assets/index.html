@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <h2>
                 <a href="#" class="logo">Dolcy</a>
             </h2>
@@ -23,19 +23,22 @@
             </ul>
         </nav>
 
-        <div class="header-img">
-            <picture>
-                <img src="./images/main.jpg" alt="main-img">
-            </picture>
-            <div class="header-img__text">
-                <h3>Esto funciona?</h3>
-                <p>Muchas palabraaaaaaaaaaaas</p>
-                <a href="#">Botón</a>
-            </div>
-    </div>
     </header>
    
     <main>
+        
+        <div class="main-image">
+            <div class="main-image__img">
+                <img src="./images/main.jpg" alt="img-main">
+                <div class="main-image__text">
+                    <h3>Esto funciona?</h3>
+                    <p>Muchas palabras</p>
+                    <a href="#">Botón</a>
+                </div>
+            </div>
+        </div>
+
+        
     </main>
     <footer>
         

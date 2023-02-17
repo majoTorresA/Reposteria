@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&display=swap');
+
+//Variables Colores
+$Base: #2525;
+$Primary-color: #b8a78c;
+$secondary-color: #ae8669;
+$terciary-color: #ae715f;
+$light-color: #f8f8f8;
+$dark-color: #0c0704;
+
+@mixin flex-basic{
+align-items: center;
+text-align: center;
+}
+
+
+body {
+    background-color: $Base;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #0c0704;
+    
+}
+
+
+a {  text-decoration: none;
+color: $dark-color; }
+a:active {color: $terciary-color;}
+
+h2, h3 {  font-family: 'Poppins', sans-serif;
+}
+
+h2 { font-size: 48px; }
+
+h3 { font-size: 30px; }
+
+.main-image__img{
+    background-image: url(../main.jpg);
+    .main-image__text{
+        display: flex;
+        justify-content: center;
+
+    }
+}
