@@ -4,7 +4,7 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-out;
 }
 
 html {
@@ -47,4 +47,37 @@ h2 {
 
 h3 {
   font-size: 30px;
+}
+
+.header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 7%;
+  border-bottom: 0.3rem solid #252525;
+}
+
+.header .logo img {
+  height: 7rem;
+}
+
+.header .navbar {
+  display: flex;
+  gap: 1rem;
+}
+.header .navbar a {
+  font-size: 1.2rem;
+}
+.header .navbar a:hover {
+  color: #f7af9d;
+  border-bottom: 1px solid #f7af9d;
+}
+
+.header .icons {
+  display: flex;
+  gap: 1rem;
+}
+.header .icons svg {
+  fill: #f7af9d;
 }/*# sourceMappingURL=main.css.map */

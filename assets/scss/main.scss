@@ -8,7 +8,7 @@ $terciary-color: #f7af9d;
 $aditional-color: #c08497;
 $light-color: #f8f8f8;
 $dark-color: #252525;
-$border: 1rem solid $dark-color;
+$border: .3rem solid $dark-color;
 $box-shadow4px: 4px 4px #CCC;
 
 @mixin flex-basic{
@@ -21,7 +21,7 @@ text-align: center;
     outline: none;
     border: none;
     text-transform: capitalize;
-    transition: .2s all ease-in-out;
+    transition: .2s all ease-out;
 }
 html{
     overflow-x: hidden;
@@ -44,6 +44,7 @@ a:active {color: $terciary-color;}
 svg {
     width: 32px;
     height: 32px;
+    
 }
 h2, h3 {  font-family: 'Poppins', sans-serif;
 }
@@ -52,4 +53,44 @@ h2 { font-size: 48px; }
 
 h3 { font-size: 30px; }
 
+.header {
+    background-color: $Base;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem 7%;
+    border-bottom: $border;
+}
 
+.header {
+    .logo{
+        img{
+            height: 7rem;
+        }
+    }
+}
+
+.header{
+    .navbar{
+        display: flex;
+        gap: 1rem;
+        a{
+            
+             font-size: 1.2rem;
+                &:hover{
+                    color: $terciary-color;
+                    border-bottom: 1px solid $terciary-color;
+
+                }
+        }
+    }
+}
+.header{
+    .icons{
+        display: flex;
+        gap: 1rem;
+        svg{
+            fill: #f7af9d;
+        }
+    }
+}
