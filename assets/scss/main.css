@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
 * {
   text-decoration: none;
+  list-style: none;
   outline: none;
   border: none;
   text-transform: capitalize;
@@ -14,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #ddd;
+  background-color: #f9f9f9;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
   color: #0c0704;
@@ -42,7 +43,7 @@ h2 {
 }
 
 .header {
-  background-color: #f8f8f8;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +116,7 @@ h2 {
 }
 
 .container {
-  margin: 2rem 1rem;
+  margin: 2rem;
 }
 
 .about {
@@ -123,7 +124,8 @@ h2 {
   justify-content: center;
 }
 .about__container {
-  background-color: #f8f8f8;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 2px #b8b8b8;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -143,4 +145,51 @@ h2 {
 }
 .about__text p {
   padding: 0 1rem;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+}
+.product__list {
+  background-color: #fff;
+  box-shadow: 0 2px 10px 2px #b8b8b8;
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+  border-radius: 16px;
+}
+.product__item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.product__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product__img {
+  display: flex;
+  justify-content: center;
+}
+.product__img img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px 2px #b8b8b8;
+}
+.product__text {
+  text-align: center;
+}
+.product__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  gap: 1rem;
+  width: 100%;
+}
+.product__btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 16px;
 }/*# sourceMappingURL=main.css.map */

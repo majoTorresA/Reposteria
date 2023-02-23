@@ -3,18 +3,24 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
 
 //Variables Colores
-$Base: #ddd;
+$Base: #f9f9f9;
 $Primary-color: #ffcad4;
 $secondary-color: #70d1f8;
 $terciary-color: #f7af9d;
 $aditional-color: #c08497;
-$light-color: #f8f8f8;
+$light-color: #fff;
 $dark-color: #252525;
 $border: .3rem solid $dark-color;
-$box-shadow4px: 4px 4px #CCC;
+$box-shadow: 0 2px 10px 2px #b8b8b8;
 $Montserrat: 'Montserrat', sans-serif;
-$Roboto:'Roboto', sans-serif;;
+$Roboto:'Roboto', sans-serif;
+$border-radius-px: 16px;
+$gap: 1rem;
 
+@mixin container-style{
+    background-color: $light-color;
+    box-shadow: $box-shadow;
+}
 @mixin flex-basic{
 align-items: center;
 text-align: center;
@@ -22,6 +28,7 @@ text-align: center;
 
 *{
     text-decoration: none;
+    list-style: none;
     outline: none;
     border: none;
     text-transform: capitalize;
@@ -56,15 +63,12 @@ h2{
     font-size: 40px;
 }
 
-
-
 .header {
     background-color: $light-color;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
     border-bottom: 2px solid $secondary-color;
     width: 100%;
 }
@@ -80,7 +84,7 @@ h2{
 
     .navbar{
         display: none;
-        gap: 1rem;
+        gap: $gap;
         a{
              font-size: 1.2rem;
                 &:hover{
@@ -129,7 +133,8 @@ h2{
             padding: 1rem;
             text-transform: none;
             border: 1px solid $secondary-color;
-            border-radius: 16px;
+            border-radius: $border-radius-px
+            ;
         }
                 label{
                 cursor: pointer;
@@ -143,21 +148,21 @@ h2{
 }
 
 .container{
-    margin: 2rem 1rem;
+    margin: 2rem ;
 }
 .about{
     display: flex;
     justify-content: center;
     &__container{
-        background-color: $light-color;
+        @include container-style();
         display: flex;
         width: 100%;
         flex-direction: column;
-        border-radius: 16px;
+        border-radius: $border-radius-px;
         padding: .5rem;
         img{
             margin: .5rem 0 1rem 0;
-            border-radius: 16px;
+            border-radius: $border-radius-px;
         }
        
     }
@@ -170,4 +175,53 @@ h2{
     p{
         padding: 0 1rem;
     }
+}
+.product{
+    display: flex;
+    justify-content: center;
+    &__list{
+        @include container-style();
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+        border-radius: $border-radius-px;
+       
+    }
+    &__item{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+   &__img{
+    display: flex;
+    justify-content: center;
+    img{
+
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        box-shadow: $box-shadow;
+    }
+   }
+    &__text{
+        text-align: center; 
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+        gap: $gap;
+        width: 100%;
+    }
+    &__btn{
+        padding: .8rem 1.5rem;
+        border-radius: $border-radius-px;
+    }
+    
 }
