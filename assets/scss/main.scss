@@ -4,14 +4,13 @@
 
 //Variables Colores
 $Base: #f9f9f9;
-$Primary-color: #ffcad4;
+$Primary-color: #E5386D;
 $secondary-color: #70d1f8;
-$terciary-color: #f7af9d;
-$aditional-color: #c08497;
+$terciary-color: #ce7964;
 $light-color: #fff;
 $dark-color: #252525;
 $border: .3rem solid $dark-color;
-$box-shadow: 0 2px 10px 2px #b8b8b8;
+$box-shadow: 0 2px 10px 2px #dadada;
 $Montserrat: 'Montserrat', sans-serif;
 $Roboto:'Roboto', sans-serif;
 $border-radius-px: 16px;
@@ -32,7 +31,7 @@ text-align: center;
     outline: none;
     border: none;
     text-transform: capitalize;
-    transition: .2s all ease-out;
+    transition: .1s all ease-out;
 }
 html{
     overflow-x: hidden;
@@ -50,7 +49,7 @@ body {
 a { 
 color: $dark-color; 
 }
-a:active {color: $terciary-color;}
+
 
 svg {
     width: 1.5rem;
@@ -179,11 +178,11 @@ h2{
 .product{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     &__list{
         @include container-style();
         width: 100%;
         padding: 1rem;
-        height: auto;
         border-radius: $border-radius-px;
        
     }
@@ -203,10 +202,9 @@ h2{
     justify-content: center;
     img{
 
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
+        height: 7rem;
         border-radius: 50%;
-        box-shadow: $box-shadow;
     }
    }
     &__text{
@@ -224,4 +222,15 @@ h2{
         border-radius: $border-radius-px;
     }
     
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-color;
+   width: 100%;
+    &__titulo{
+       color: $light-color;
+    }
 }
